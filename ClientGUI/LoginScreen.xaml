@@ -1,0 +1,31 @@
+﻿<Window x:Class="ClientGUI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Login Screen" Height="356.716" Width="649.253"
+        ResizeMode="NoResize"
+        Loaded="OnLoaded"
+        KeyDown="Window_KeyDown"
+        >
+    
+    <Grid>
+        <Label Content="UserName&#xD;&#xA;" HorizontalAlignment="Left" Margin="17,31,0,0" VerticalAlignment="Top"/>
+
+      
+        <Label Content="Password&#xD;&#xA;" HorizontalAlignment="Left" Margin="17,78,0,0" VerticalAlignment="Top"/>
+
+           
+        <Button Content="Authenticate" HorizontalAlignment="Left" Margin="69,144,0,0" VerticalAlignment="Top" Width="94" Click="LoginButton"/>
+      
+        <Label Content="Port No." HorizontalAlignment="Left" Margin="313,94,0,0" VerticalAlignment="Top"/>
+        <Label Content="Repository Address " HorizontalAlignment="Left" Margin="313,23,0,0" VerticalAlignment="Top" RenderTransformOrigin="-3.061,3.141"/>
+
+        <TextBox x:Name="IPAddress" HorizontalAlignment="Left" Height="23" Margin="462,31,0,0" TextWrapping="Wrap" Text="127.0.0.1" VerticalAlignment="Top" Width="120"/>
+        <TextBox  x:Name="PortNo"   HorizontalAlignment="Left" Height="23" Margin="462,94,0,0" TextWrapping="Wrap" Text="4117" VerticalAlignment="Top" Width="120"/>
+
+        <TextBox Name="UserNameData" Text="UserName" HorizontalAlignment="Left" Height="23" Margin="118,33,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
+        <PasswordBox Name="PasswordData" HorizontalAlignment="Left" Margin="118,94,0,0" VerticalAlignment="Top" Width="120"/>
+
+
+    </Grid>
+
+</Window>

@@ -1,0 +1,35 @@
+﻿<Window x:Class="ClientGUI.ClientAction"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Repository Access Console" Height="500" Width="500"
+        ResizeMode="NoResize"
+        Loaded="OnLoaded"
+        KeyDown="Window_KeyDown"
+        >
+    
+    <Grid>
+        <Label Content="Selected Files" HorizontalAlignment="Left" Margin="49,11,0,0" VerticalAlignment="Top" RenderTransformOrigin="-6.786,-8.997"/>
+
+        <ListBox x:Name="SelectedFiles" HorizontalAlignment="Left" Height="128" Margin="37,42,0,0" VerticalAlignment="Top" SelectionMode="Multiple" Width="193"/>
+        <Button Content="Open File Dialog" HorizontalAlignment="Left" Margin="286,33,0,0" VerticalAlignment="Top" Width="113" Height="26" Click="FileOpenDialog"/>
+
+        <Button Content="Push to Repository" HorizontalAlignment="Left" Margin="286,90,0,0" VerticalAlignment="Top" Width="113" Height="26" Click="PushFiles"/>
+        
+
+        
+        <Label Content="Namespace ID" HorizontalAlignment="Left" Margin="15,199,0,0" VerticalAlignment="Top" Height="32" Width="99"/>
+        <TextBox x:Name="NamespaceID" HorizontalAlignment="Left" Height="23" Margin="21,226,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Text="DefaultNS"/>
+     
+        <Label Content="Repository Namespaces" HorizontalAlignment="Left" Margin="21,254,0,0" VerticalAlignment="Top" RenderTransformOrigin="-6.786,-8.997" Height="26" Width="137"/>
+        <ListBox x:Name="RepoNamespace" HorizontalAlignment="Left" Height="127" Margin="21,284,0,0" VerticalAlignment="Top" Width="193"/>
+
+        <Label Content="Packages in Namespace" HorizontalAlignment="Left" Margin="241,259,0,0" VerticalAlignment="Top" RenderTransformOrigin="-6.786,-8.997" Width="138"/>
+        <ListBox x:Name="RepoPackages" HorizontalAlignment="Left" Height="126" Margin="241,285,0,0" VerticalAlignment="Top" Width="183"/>
+        
+        <TextBox x:Name="PackageName" HorizontalAlignment="Left" Height="23" Margin="241,231,0,0" TextWrapping="Wrap" Text="DefaultPkg" VerticalAlignment="Top" Width="116" />
+        <Label Content="Package ID" HorizontalAlignment="Left" Margin="241,199,0,0" VerticalAlignment="Top" Height="32" Width="96"/>
+        <Button Content="Extract Package" HorizontalAlignment="Left" Margin="288,148,0,0" VerticalAlignment="Top" Width="111" Click="ExtractPackage"/>
+
+    </Grid>
+
+</Window>
